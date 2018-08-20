@@ -62,7 +62,6 @@
                 <div class="col-md-5">
                     <h3>{{$post->title}}</h3>
                     <p>{{$post->description}}</p>
-            <!--        <a class="btn btn-primary" href="#">View Project</a> -->
                 </div>
             </div>
             <hr>
