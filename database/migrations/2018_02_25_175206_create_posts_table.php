@@ -17,7 +17,8 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->integer('compagnie_id')->unsigned();
             $table->foreign('compagnie_id')->references('id')->on('compagnie');
-            $table->binary('image');
+            $table->string('image');
+            $table->string('title');
             $table->string('description');
             $table->timestamps();
         });

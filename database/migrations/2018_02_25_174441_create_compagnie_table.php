@@ -19,6 +19,7 @@ class CreateCompagnieTable extends Migration
             $table->string('description');
             $table->string('gerant');
             $table->string('emailGerant');
+            $table->string('logo');
             $table->timestamps();
         });
     }

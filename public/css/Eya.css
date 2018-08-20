@@ -1,0 +1,194 @@
+.top-nav {
+    margin-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    height: 50vh;
+    background: -moz-linear-gradient(left, #000000 0%, #8f0222 100%);
+    background: -webkit-linear-gradient(left, #000000 0%, #8f0222 100%);
+    background: linear-gradient(to right, #000000 0%, #8f0222 100%);
+}
+
+.top-nav-right {
+    height: 100%;
+    display: table;
+    text-align: center;
+    align-items: baseline;
+}
+
+.top-nav-right-title {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+    color: white;
+}
+
+.top-nav-right-text {
+    display: table-row;
+    vertical-align: bottom;
+    text-align: left;
+
+    color: white;
+}
+
+.background-top {
+    margin-right: 0%;
+    alignment: right;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #002f4b, #dc4225);
+    opacity: .6;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.navbar-laravel {
+
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+
+#service {
+    height: 100%;
+    padding-bottom: 15%;
+    background-color: #FCFCFC;
+}
+
+.service-title {
+    display: table-cell;
+    vertical-align: middle;
+    color: black;
+    font-weight: bold;
+    font-size: 4em;
+    text-decoration: underline;
+    text-decoration-color: #FCB040;
+    margin-top: 5%;
+    width: 25%;
+}
+
+.service-boyd {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.service-paragraph {
+    text-align: center;
+    color: #7f8c8d;
+    margin-top: 20px;
+    display: table-cell;
+    width: 50%;
+
+}
+
+.service-subtitle {
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+}
+
+#propos {
+    height: 100%;
+    background-color: #ECF4F4;
+}
+
+.propos-title {
+    display: table-cell;
+    vertical-align: middle;
+    color: black;
+    font-size: 4em;
+    text-decoration: underline;
+    text-decoration-color: #010202;
+    margin-top: 5%;
+    width: 25%;
+}
+
+.propos-block {
+    width: 100%;
+    margin-top: 5%;
+    padding: 5%;
+    margin-bottom: 5%;
+    background-color: #A4ACAC;
+    box-shadow: 3px 3px 3px 3px #7d8284;
+    color: white;
+}
+
+#equipes {
+    height: 100%;
+    background-color: #EEA928;
+    padding-bottom: 10%;
+    color: white;
+
+}
+
+
+
+#contact {
+    height: 100%;
+    background-color: #cccccc;
+}
+
+#contact-title {
+
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 4em;
+    text-decoration: underline;
+    text-decoration-color: #FCFCFC;
+    margin-top: 5%;
+    width: 25%;
+}
+
+.title-div {
+    margin-bottom: 10%;
+    margin-top: 10%;
+    display: table;
+    text-align: center;
+    alignment: center;
+}
+
+.subtitle{
+    color: #7f8c8d;
+    font-size: 2em ;
+}
+#competences{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 100%;
+    background-color: #FCFCFC;
+}
+.competence-title{
+    display: table-cell;
+    vertical-align: middle;
+    color: black;
+    font-size: 4em;
+    text-decoration: underline;
+    text-decoration-color: #149C84;
+    margin-top: 5%;
+    width: 25%;
+}
+.img-equipe{
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+#footer{
+    height: 10vh;
+}
+.contact-block{
+    width: 100%;
+    margin-top: 5%;
+    padding: 5%;
+    margin-bottom: 5%;
+    border-width: 2px;
+    border-radius: 4px;
+    border-color: white;
+    box-shadow: 3px 3px 3px 3px #7d8284;
+    border-style: solid;
+    color: white;
+
+}

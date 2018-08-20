@@ -1,94 +1,75 @@
-<!doctype html>
-<html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.wel')
 
-        <title>Laravel</title>
+@section('content')
+    <div class="container-fluid " style="padding-left: 0px ; padding-right: 0px ;">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <div class="row bg-white">
+            <div class="col-sm">
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+                <img src="{{asset("images/cuisine.png")}}" class="img-fluid" style="margin-top: 5px; margin-left: 5px ; margin-bottom: 5px; ">
+            </div>
+            <div class="col-sm" style="margin-top: 5%;">
+                <h1> {{ $compagny->name }}</h1>
+                <p> Address : </p>
+                <p> E-mail : {{ $compagny->emailGerant }}</p>
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Groupe 3A
-                </div>
-
-                <div class="links">
-                    <a href="/who">Cuisine et Dressing</a>
-                    <a href="https://laracasts.com">Batiment et génie Civil</a>
-                    <a href="https://laravel-news.com">Services et Entretiens</a>
-                    <a href="https://forge.laravel.com">Promotion Immobiliére</a>
-                </div>
             </div>
         </div>
-    </body>
-</html>
+        <!--
+
+
+                     <div class="col-4 " style="box-shadow: #6c757d; background-color: #636b6f; height: 200px; ">
+                         <ul class="nav flex-column">
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#">Link</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#">Link</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link" href="#">Link</a>
+                             </li>
+                             <li class="nav-item">
+                                 <a class="nav-link disabled" href="#">Disabled</a>
+                             </li>
+                         </ul>
+
+                     </div>
+                     <div class="col-8">
+
+                             <div class="card text-dark"
+                                  style="padding-bottom: 20px ; margin-top: 20px ; padding-bottom: 20px ; padding-right: 20px; padding-left: 20px;  ">
+                                 <div class="card-body">
+                                     <h4 class="card-title"></h4>
+                                     <p class="card-text"></p>
+                                 </div>
+                                 <img class="card-img-bottom img-fluid" src="" alt="Card image">
+                             </div>
+
+
+                     </div>
+     -->
+
+        @foreach($comp as $post)
+            <div class="row " style="margin-top: 10% ; ">
+
+                <div class="col-md-7">
+                    <a href="#">
+                        <img class="img-fluid rounded mb-3 mb-md-0" src="{{ asset($post->image)}}" alt=""
+                             style="height: 300px ; width: 700px;">
+                    </a>
+                </div>
+                <div class="col-md-5">
+                    <h3>{{$post->title}}</h3>
+                    <p>{{$post->description}}</p>
+            <!--        <a class="btn btn-primary" href="#">View Project</a> -->
+                </div>
+            </div>
+            <hr>
+            {{ $comp->links() }}
+
+        @endforeach
+    </div>
+    </div>
+@endsection
+

@@ -5,7 +5,8 @@
   <div class="card-body">
     <div class="list-group">
       @foreach($compagnies as $compagny)
-    <a href="/compagnie/{{$compagny->id}}">  <button type="button" class="list-group-item list-group-item-action"> {{$compagny->name}}</button></a>
+    <a href="/compagnie/{{$compagny->id}}">
+      <button type="button" class="list-group-item list-group-item-action"> {{$compagny->name}}</button></a>
       @endforeach
     </div>
 </div>
