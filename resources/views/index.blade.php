@@ -126,6 +126,7 @@
                     <p>Gérant de cuisine et des services</p>
                 </div>
                 <div class="col-2">
+                    <!-- shadow comment -->
                     <img src="{{asset("images/lamjad.jpg")}}" class="img-fluid img-equipe"/>
                 </div>
                 <div class="col-2">
