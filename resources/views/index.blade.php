@@ -17,7 +17,7 @@
         <div class="row service-boyd">
 
             <div class="col-md-3 col-sm-12 ">
-                <img src="{{asset("storage/logo/batiments.png")}}" class="img-fluid" width="150px;"
+                <img src="{{asset("logo/batiments.png")}}" class="img-fluid" width="150px;"
                      style=" border-radius: 20%;"/>
 
                 <h5 class="service-subtitle"> Promotion Immobliére</h5>
@@ -25,7 +25,7 @@
                     convient</p>
             </div>
             <div class="col-md-3  col-sm-12">
-                <img src="{{asset("storage/logo/constrcution.png")}}" class="img-fluid" width="150px;"
+                <img src="{{asset("logo/constrcution.png")}}" class="img-fluid" width="150px;"
                      style=" border-radius: 20%;"/>
 
 
@@ -33,7 +33,7 @@
                 <p class="service-paragraph">Besoin d'un immeuble ou d'unemaison ? Il vous suffit de demander</p>
             </div>
             <div class="col-md-3  col-sm-12">
-                <img src="{{asset("storage/logo/cuisine.png")}}" class="img-fluid" width="150px; "
+                <img src="{{asset("logo/cuisine.png")}}" class="img-fluid" width="150px; "
                      style=" border-radius: 20%;"/>
 
                 <h5 class="service-subtitle"> Cuisine et dressing</h5>
@@ -42,7 +42,7 @@
 
             </div>
             <div class="col-md-3 col-sm-12">
-                <img src="{{asset("storage/logo/services.png")}}" class="img-fluid" width="150px;"
+                <img src="{{asset("logo/services.png")}}" class="img-fluid" width="150px;"
                      style=" border-radius: 20%;"/>
 
                 <h5 class="service-subtitle"> Service et entretient</h5>
@@ -117,7 +117,7 @@
                 </div>
 
                 <div class="col-2">
-                    <img src="{{asset("storage/images/lassad.jpg")}}" class="img-fluid img-equipe"/>
+                    <img src="{{asset("images/lassad.jpg")}}" class="img-fluid img-equipe"/>
 
                 </div>
                 <div class="col-2 ">
@@ -126,7 +126,7 @@
                     <p>Gérant de cuisine et des services</p>
                 </div>
                 <div class="col-2">
-                    <img src="{{asset("storage/images/lamjad.jpg")}}" class="img-fluid img-equipe"/>
+                    <img src="{{asset("images/lamjad.jpg")}}" class="img-fluid img-equipe"/>
                 </div>
                 <div class="col-2">
 
@@ -134,7 +134,7 @@
                     <p>Gérant du bâtiment</p>
                 </div>
                 <div class="col-2">
-                    <img src="{{asset("storage/images/aymen.jpg")}}" class="img-fluid img-equipe"/>
+                    <img src="{{asset("images/aymen.jpg")}}" class="img-fluid img-equipe"/>
 
                 </div>
                 <div class="col-2">
