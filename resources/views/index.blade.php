@@ -17,7 +17,7 @@
         <div class="row service-boyd">
 
             <div class="col-md-3 col-sm-12 ">
-                <img src="{{asset("logo/batiments.png")}}" class="img-fluid" width="150px;"
+                <img src="{{asset("images/batiments.png")}}" class="img-fluid" width="150px;"
                      style=" border-radius: 20%;"/>
 
                 <h5 class="service-subtitle"> Promotion Immobliére</h5>
@@ -25,7 +25,7 @@
                     convient</p>
             </div>
             <div class="col-md-3  col-sm-12">
-                <img src="{{asset("logo/constrcution.png")}}" class="img-fluid" width="150px;"
+                <img src="{{asset("images/constrcution.png")}}" class="img-fluid" width="150px;"
                      style=" border-radius: 20%;"/>
 
 
@@ -33,7 +33,7 @@
                 <p class="service-paragraph">Besoin d'un immeuble ou d'unemaison ? Il vous suffit de demander</p>
             </div>
             <div class="col-md-3  col-sm-12">
-                <img src="{{asset("logo/cuisine.png")}}" class="img-fluid" width="150px; "
+                <img src="{{asset("images/cuisine.png")}}" class="img-fluid" width="150px; "
                      style=" border-radius: 20%;"/>
 
                 <h5 class="service-subtitle"> Cuisine et dressing</h5>
@@ -42,7 +42,7 @@
 
             </div>
             <div class="col-md-3 col-sm-12">
-                <img src="{{asset("logo/services.png")}}" class="img-fluid" width="150px;"
+                <img src="{{asset("images/services.png")}}" class="img-fluid" width="150px;"
                      style=" border-radius: 20%;"/>
 
                 <h5 class="service-subtitle"> Service et entretient</h5>
