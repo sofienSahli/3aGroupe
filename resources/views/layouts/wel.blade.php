@@ -84,11 +84,11 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
                 <li class="nav-item" style="border-bottom: 1px solid #95a5a6; margin-left: 10px;">
-                    <a class="nav-link" href="#" role="button"
+                    <a class="nav-link" href="/#" role="button"
                        aria-haspopup="false" aria-expanded="false">ACCEUIL</a>
                 </li>
                 <li class="nav-item" style="border-bottom: 1px solid #f1c40f; margin-left: 10px; ">
-                    <a class="nav-link" href="#service"
+                    <a class="nav-link" href="/#service"
                     >SERVICES</a>
                 </li>
                 <ul class="navbar-nav mr-auto">
@@ -105,16 +105,16 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#propos"
+                        <a class="nav-link" href="/#propos"
                            style="border-bottom: 1px solid #8f0222; margin-left: 10px;"
                         >A PROPOS</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#equipes"
+                        <a class="nav-link" href="/#equipes"
                            style="border-bottom: 1px solid #8f0222; margin-left: 10px;"
 
                         >EQUIPES</a></li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact"
+                        <a class="nav-link" href="/#contact"
                            style="border-bottom: 1px solid #27ae60; margin-left: 10px;">CONTACT</a></li>
                 </ul>
             </ul>
