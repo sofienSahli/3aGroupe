@@ -1,4 +1,4 @@
-@extends('layouts.wel')
+@extends('layouts.compagnie')
 
 @section('content')
     <div class="container-fluid " style="padding-left: 0px ; padding-right: 0px ;">
@@ -48,42 +48,8 @@
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZCCAtzZDufpjF7Z-xXA2pRNO1lhWpMZg&callback=initMap">
         </script>
 
-        <!--
 
-
-                     <div class="col-4 " style="box-shadow: #6c757d; background-color: #636b6f; height: 200px; ">
-                         <ul class="nav flex-column">
-                             <li class="nav-item">
-                                 <a class="nav-link" href="#">Link</a>
-                             </li>
-                             <li class="nav-item">
-                                 <a class="nav-link" href="#">Link</a>
-                             </li>
-                             <li class="nav-item">
-                                 <a class="nav-link" href="#">Link</a>
-                             </li>
-                             <li class="nav-item">
-                                 <a class="nav-link disabled" href="#">Disabled</a>
-                             </li>
-                         </ul>
-
-                     </div>
-                     <div class="col-8">
-
-                             <div class="card text-dark"
-                                  style="padding-bottom: 20px ; margin-top: 20px ; padding-bottom: 20px ; padding-right: 20px; padding-left: 20px;  ">
-                                 <div class="card-body">
-                                     <h4 class="card-title"></h4>
-                                     <p class="card-text"></p>
-                                 </div>
-                                 <img class="card-img-bottom img-fluid" src="" alt="Card image">
-                             </div>
-
-
-                     </div>
-     -->
-
-        @foreach($comp as $post)
+    @foreach($comp as $post)
             <div class=" row" style="margin: 20px; margin-left: 3%; margin-right: 3%; ">
 
                 <div class="card col-8 col-sm-12">
