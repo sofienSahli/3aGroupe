@@ -38,8 +38,8 @@ class PostController extends Controller
     {
         if ($request->compagnie != null) {
             if ($request->hasFile('image')) {
-                //$request->image->store();
-                $fileName = $request->user[image_url]->getClientOriginalName();
+             // $request->image->store();
+                $fileName = $request->file('image')->getClientOriginalName();
                 $post = new Post;
                 $post->title = $request->title;
                 $post->description = $request->description;
