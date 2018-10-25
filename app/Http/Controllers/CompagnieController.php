@@ -17,12 +17,8 @@ class CompagnieController extends Controller
      */
     public function index()
     {
-        $compagny = Post::where('compagnie_id', 1)->simplePaginate(4);
         $compagnies = Compagnie::all();
-        if (Session::has('user')) {
-            return view("compagnies.index", ['compagnies' => $compagnies]);
-        }
-        return view('welcome', ['compagnies' => $compagnies, "comp" => $compagny]);
+        return json_encode($compagnies);
     }
 
     public function home()
@@ -50,8 +46,23 @@ class CompagnieController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        return redirect('home');
+        $compagnie = new Compagnie;
+
+        if ($request->hasFile('file')) {
+            // $request->image->store();
+            $fileName = $request->file("logo");
+            $path = $request->file->store("public/images");
+            $$compagnie->logo = "storage" . substr($path, 6);
+
+        }
+        $data = json_decode($request['compagnie'], true);
+        $compagnie->name = $data['name'];
+        $compagnie->gerant = $data['gerant'];
+        $compagnie->emailGerant = $data['emailGerant'];
+        $compagnie->telephone = $data['telephone'];
+        $compagnie->address = $data['address'];
+        $compagnie->save();
+        return json_encode($compagnie);
 
     }
 
@@ -63,20 +74,9 @@ class CompagnieController extends Controller
      */
     public function show($id)
     {
-        if ($id == null)
-            $id = 1;
+        $com = Compagnie::find($id);
+        return json_encode($com);
 
-        $compagnies = Compagnie::all();
-        if (Session::has('user')) {
-            $com = Compagnie::find($id);
-            return view("compagnies.show", ['compagnie' => $com]);
-        } else {
-
-            $com = Compagnie::find($id);
-            $posts = Post::where('compagnie_id', $id)->simplePaginate(5);
-            return view('welcome', ['compagnies' => $compagnies, "comp" => $posts, 'compagny' => $com]);
-
-        }
     }
 
     /**

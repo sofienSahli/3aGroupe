@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', 'CompagnieController@home');
+Route::get('/', function (){
+    return View::Make('index');
+});
 
 
 Auth::routes();

@@ -116,29 +116,29 @@
                     </h1>
                 </div>
 
-                <div class="col-2">
+                <div class="col-lg-2 col-sm-12">
                     <img src="{{asset("images/lassad.jpg")}}" class="img-fluid img-equipe"/>
 
                 </div>
-                <div class="col-2 ">
+                <div class="col-lg-2 col-sm-12">
 
                     <h5 style="font-weight: bold;">Lassaad Ouali</h5>
                     <p>Gérant de cuisine et des services</p>
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-sm-12">
                     <!-- shadow comment -->
                     <img src="{{asset("images/lamjad.jpg")}}" class="img-fluid img-equipe"/>
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-sm-12" >
 
                     <h5 style="font-weight: bold;">Lamjed Ouali</h5>
                     <p>Gérant du bâtiment</p>
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-sm-12">
                     <img src="{{asset("images/aymen.jpg")}}" class="img-fluid img-equipe"/>
 
                 </div>
-                <div class="col-2">
+                <div class="col-lg-2 col-sm-12">
 
                     <h5 style="font-weight: bold;">Aymen Ouali</h5>
                     <p>Gérant de la promotion</p>

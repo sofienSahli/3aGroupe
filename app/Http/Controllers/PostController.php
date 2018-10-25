@@ -36,23 +36,23 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        if ($request->compagnie != null) {
-            if ($request->hasFile('image')) {
-             // $request->image->store();
-                $fileName = $request->file('image')->getClientOriginalName();
-                $post = new Post;
-                $post->title = $request->title;
-                $post->description = $request->description;
+        $post = new Post;
 
-                $request->image->storeAs("public/upload", $fileName);
-                $post->image = 'storage/upload/' . $fileName;
-                $post->compagnie_id = $request->compagnie;
-                $post->save();
-            }
-            //  Session::flash('succes' , 'Post enregistrée');
-            return redirect('compagnie/' . $post->compagnie_id);
+        if ($request->hasFile('file')) {
+            // $request->image->store();
+            $fileName = $request->file("file");
+            $path = $request->file->store("public/images");
+            $post->image ="storage".substr($path,6);
+
+
+
         }
-        return $request->all(); // $request->all();
+        $data = json_decode($request['spot'], true);
+        $post->description = $data['description'];
+        $post->title = $data['title'];
+        $post->compagnie_id = $data['compagnie_id'];
+        $post->save();
+        return json_encode($post);
     }
 
     /**
@@ -62,8 +62,8 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        return $id . "AA";
+    {  $com = Post::find($id);
+        return json_encode($com);
 
         //
     }
